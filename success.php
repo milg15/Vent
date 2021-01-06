@@ -8,7 +8,6 @@ if($_SERVER['REQUEST_METHOD'] ==='POST'){
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
-    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>

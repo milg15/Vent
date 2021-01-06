@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
             changeLanguage(curr)
         }
     }
-    changeLanguage("en_us")
+    else{
+        changeLanguage("en_us");
+    }
 });// set all the text
 
 function changeLanguage(newLang){
