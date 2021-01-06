@@ -2,8 +2,7 @@
 if($_SERVER['REQUEST_METHOD'] ==='POST'){
     $to = "milg.style@gmail.com"; // this is your Email address
     $from = "vent@mariaisabel.tech"; // this is the sender's Email address
-    $subject = $name;
-    $name = $_POST['name'];
+    $subject = $_POST['name'];
     $message = $_POST['problem'];
 
     $headers = "From:" . $from;
