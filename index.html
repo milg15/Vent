@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="lang.js"></script>
+    <script src="https://getinsights.io/js/insights.js"></script>
+    <script>
+        //insights.init('B5ONZl1sT96kqzAw');
+        //insights.trackPages();
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb-min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 
+        For Dark Mode? 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    -->
+    <title>Tell me your problems</title>
+</head>
+<body>
+    <main>
+        <section class="form-container">
+            <h1 id="welcome"></h1>
+            <p id="description"></p>
+            <form action="success.php" method="post">
+                <label>
+                    <input type="text" name="name" id="name" placeholder="Nombre" required>
+                </label>
+                <label>
+                    <textarea id="problem" name="problem" type="text" required></textarea>
+                </label>
+                <input type="submit" id="send_btn">
+            </form>
+            <div class="languages">
+                <button class='outline' onclick="changeLanguage('es_pe')">Español</button>
+                <button class='outline'onclick="changeLanguage('en_us')">English</button>
+            </div>
+        </section>
+        <section class="wait">
+            <div class="lds-ripple"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Made with ❤️ by <a href="https://mariaisabel.tech">Maria I.</a></p>
+        <p>Simple 🍂 <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
